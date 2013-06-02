@@ -99,7 +99,7 @@ sessions futures, sont téléchargées avec un cache pré-initialisé.
 En pratique, les choses sont un peu différentes. Le cache des navigateurs
 est limité en taille et vos utilisateurs ne naviguent pas que sur votre
 site. Au fur et à mesure de leur surf le cache se remplit, et certains
-anciens éléments sont effacés pour laisser de la place, peut être les
+anciens éléments sont effacés pour laisser de la place, peut-être les
 vôtres. Le résultat c'est qu'à la prochaine visite sur votre site, on se
 retrouve dans la situation d'un cache vide : le navigateur doit
 retélécharger tous vos composants.
@@ -186,7 +186,7 @@ téléchargement en plus. Un élément qui reste trop longtemps en cache,
 c'est un élément qui risque de ne pas être mis à jour dans le rendu du
 navigateur quand bien même il aurait changé sur le serveur.
 
-Le premier mécanisme mis en oeuvre pour répondre à ces questions est la
+Le premier mécanisme mis en œuvre pour répondre à ces questions est la
 requête conditionnelle. Il s'agit pour le serveur d'informer le
 navigateur sur la date de dernière mise à jour du contenu. Dans les
 téléchargements suivants, le navigateur peut demander au serveur si la
@@ -446,9 +446,9 @@ ceux qui ont les meilleures performances, donc qui ont probablement le
 plus réfléchi à la question, ont plutôt tendance à les désactiver.
 
 Il n'y a pas non plus de spécificité suivant le type de contenu (HTML,
-javascript, feuille de style, images, autres). Seul Cdiscount fait une
+JavaScript, feuille de style, images, autres). Seul Cdiscount fait une
 différence en mettant des ETag sur 60 images mais aucun des 25 fichiers
-javascript ou des 19 fichiers CSS.
+JavaScript ou des 19 fichiers CSS.
 
 ![Statistiques sur la présence d'ETag sur un échantillon de sites français](img/chap03-statistiques-sur-la-presence-d-etag-sur-un-echantillon-de-sites-francais.png)
 
@@ -537,9 +537,9 @@ proxy.
 
 En pratique, on sépare d'un côté les ressources qui ne changent que
 rarement, voire jamais (images de graphisme, feuilles de style,
-javascript et plus généralement tous les fichiers statiques), et d'un
+JavaScript et plus généralement tous les fichiers statiques), et d'un
 autre côté les ressources dynamiques ou qui changent fréquemment
-(principalement le code HTML et quelques échanges ajax).
+(principalement le code HTML et quelques échanges AJAX).
 
 Les ressources statiques peuvent le plus souvent être mises en cache à
 vie, c'est à dire une dizaine d'années. Les ressources dynamiques
@@ -622,7 +622,7 @@ en va de même pour Mozilla Firefox.
 
 En fait, on va même un peu plus loin puisque si vous demandez trois
 images sur un domaine HTTPS, même si ces dernières sont en cache, ce sont
-peut être les trois qui seront retéléchargées. Internet Explorer
+peut-être les trois qui seront retéléchargées. Internet Explorer
 télécharge la première, à dessein, mais risque de ne pas avoir encore la
 réponse avant de tenter d'afficher la seconde image. Au lieu d'attendre,
 il constate qu'il n'a toujours pas établi de connexion, et envoie une
@@ -666,7 +666,7 @@ de désactiver les caches non explicites s'il y a des paramètres
 ne pas utiliser au mieux certains caches mal configurés même si vous
 avez une expiration explicite.
 
-![Les adresses des fichiers javascript contiennent des numéros de version](img/chap03-les-adresses-des-fichiers-javascript-contiennent-des-numeros-de-version.png)
+![Les adresses des fichiers JavaScript contiennent des numéros de version](img/chap03-les-adresses-des-fichiers-javascript-contiennent-des-numeros-de-version.png)
 
 #### Forme et génération du jeton unique
 
@@ -842,11 +842,11 @@ mise en cache, ils resteraient bloqués à leur ancienne valeur.
 
 Ainsi, afin de profiter au maximum du cache, on tente de séparer les
 composants statiques du reste de la page. En externalisant les feuilles
-de style et les javascript dans des fichiers externes, on permet que ces
+de style et les JavaScript dans des fichiers externes, on permet que ces
 codes soient mis en cache, selon les méthodes expliquées plus avant,
 quand bien même la page HTML elle-même ne le serait pas.
 
-Cette externalisation, où chaque déclaration javascript ou css est
+Cette externalisation, où chaque déclaration JavaScript ou CSS est
 retirée du code HTML, permet de réduire de façon importante la taille de
 chaque page, et donc le temps de téléchargement pour l’utilisateur.
 Chaque clic sur un lien va mener à une nouvelle page bien plus
@@ -857,10 +857,10 @@ lors du premier accès à votre site. Cela peut avoir un impact
 significatif si votre site a une grande latence, ou si vos visiteurs ne
 consultent qu’une à deux pages à chaque visite. Nous verrons cependant
 dans les chapitres suivants qu’il est possible de regrouper les
-différents fichiers javascript et CSS pour limiter cet effet négatif.
+différents fichiers JavaScript et CSS pour limiter cet effet négatif.
 
 **Recommandation** : externalisez toutes les instructions CSS ou
-javascript dans un fichier séparé de la page HTML. Vous pourrez alors
+JavaScript dans un fichier séparé de la page HTML. Vous pourrez alors
 définir une expiration explicite importante sur ces éléments.
 
 ### Système de préchargement
@@ -876,8 +876,8 @@ ne seront pas utilisés ensuite. Un préchargement inutile est en effet
 pénalisant pour l’utilisateur mais aussi pour vos serveurs.
 
 Ainsi, même si votre page d’accueil n’a pas de commentaires, pourquoi ne
-pas charger les icônes et codes javascript qui sont utilisés dans les
-pages internes ? Les illustrations courantes, les javascripts et
+pas charger les icônes et codes JavaScript qui sont utilisés dans les
+pages internes ? Les illustrations courantes, les JavaScript et
 feuilles de styles sont de très bon candidats au préchargement. Les
 pages HTML elles-même offrent un ration utilité/risque un peu moins
 intéressant.
@@ -910,7 +910,7 @@ un ralentissement sans savoir à quoi l'attribuer.
 La méthode utilisée pour le préchargement a aussi une influence dans la
 décision. Ainsi comme c'est détaillé dans la suite, l'utilisation d'une
 balise `<link rel="prefetch" ...>` présente moins de risques d'effet
-négatif que l'utilisation d'un code javascript.
+négatif que l'utilisation d'un code JavaScript.
 
 #### Prefetch et prerender
 
@@ -941,7 +941,7 @@ prefetch le navigateur est incité à analyser la page préchargée pour en
 télécharger les sous-composants et en commencer le rendu. L'effet est
 similaire à celui d'une page téléchargée dans un onglet en tâche de
 fond. Vous pouvez savoir si la page est chargée en tâche de fond ou en
-avant-plan grâce à la propriété javascript
+avant-plan grâce à la propriété JavaScript
 `document.webkitVisibilityState` qui retournera « visible », « hidden » ou
 « prerender », suivant les cas.
 
@@ -971,13 +971,13 @@ un indicateur équivalent donnerait en effet un très mauvais ressenti de
 performance à l’utilisateur, même si le résultat objectif est
 intéressant.
 
-Il est aussi possible de charger des images en javascript avec `new
-Image()`, de charger une bibliothèque de code javascript avec un simple
+Il est aussi possible de charger des images en JavaScript avec `new
+Image()`, de charger une bibliothèque de code JavaScript avec un simple
 `<script>`, d'utiliser la balise `<object>`, ou même de charger des
 éléments dans une iframe cachées. Ces trois méthodes peuvent toutefois
 provoquer des indicateurs d’attente dans l’interface utilisateur, voire
 bloquer l’interface entièrement (pendant l’interprétation de la
-bibliothèque javascript par exemple).
+bibliothèque JavaScript par exemple).
 
 #### DNS
 
@@ -1018,7 +1018,7 @@ premières propositions de la barre d'adresse quand elle est déroulée.
 ### Mise en cache des requêtes Ajax
 
 Les sites modernes font de plus en plus appel à des requêtes dites
-« Ajax ». Il s’agit simplement de requêtes HTTP faites en javascript
+« Ajax ». Il s’agit simplement de requêtes HTTP faites en JavaScript
 pour actualiser des données précises sans avoir à recharger
 l’intégralité de la page web et de ses composants.
 
@@ -1050,14 +1050,14 @@ n’importe quel autre composant. Les entêtes de cache peuvent être
 ajoutées par le serveur web ou directement par votre langage de script
 serveur.
 
-Faites juste attention aux bibliothèques javascript qui activent par
+Faites juste attention aux bibliothèques JavaScript qui activent par
 défaut un mécanisme anti-cache (injection d’un paramètre aléatoire et
 unique dans l’adresse). C’est toujours une fonctionnalité optionnelle
 qu’on peut désactiver, pensez-y.
 
 **Recommandation** : quand cela est possible, pensez à mettre aussi en
 cache les requêtes Ajax, et éventuellement à désactiver le mécanisme
-anti-cache de votre bibliothèque javascript.
+anti-cache de votre bibliothèque JavaScript.
 
 ### Mise en cache d’une page d’accueil ou d’une page événementielle à fort trafic
 
@@ -1084,10 +1084,10 @@ mis à jour à chaque nouvel accès sur la page. Assez souvent il y a une
 boite d’authentification utilisateur, des publicités, éventuellement un
 panier sur un site marchand, ou des informations en temps réel sur un
 site sportif ou d’actualité. Au lieu d’être inclus directement dans la
-page HTML, on va réaliser du code javascript pour charger ces éléments
+page HTML, on va réaliser du code JavaScript pour charger ces éléments
 dans un second temps, par exemple avec Ajax. Attention toutefois à
 proposer un lien ou un moyen d'accès alternatif à ses informations sans
-utiliser javascript (un lien vers la page panier et vers la page
+utiliser JavaScript (un lien vers la page panier et vers la page
 d'authentification suffisent probablement).
 
 Notre page principale sera donc indépendante de tout élément temps réel
@@ -1237,10 +1237,10 @@ lancent aussi la nouvelle page sans passer par le cache. Ce peut être
 une fonctionnalité intéressante à exploiter mais si vous souhaitez
 simplement charger une nouvelle page après quelques secondes (par
 exemple pour un interstitiel de publicité) il faut mieux employer un
-code javascript qui utilise le document.location. Pour des questions de
+code JavaScript qui utilise le document.location. Pour des questions de
 compatibilité rien ne vous empêche cependant d'utiliser les deux : le
 document.location en premier et la balise `<meta>` qui se déclenche une
-seconde plus tard pour les utilisateurs sans javascript.
+seconde plus tard pour les utilisateurs sans JavaScript.
 
 ### Autres comportements par défaut
 
@@ -1337,7 +1337,7 @@ Dans les navigateurs
 
 Les réglages de cache sont souvent accusés de tous les maux par 
 les développeurs. Beaucoup de sites vous recommandent de modifier 
-le cache ou de le désactiver. Vous l'avez peut être fait. Vos visiteurs, 
+le cache ou de le désactiver. Vous l'avez peut-être fait. Vos visiteurs, 
 eux, ne toucheront pas aux réglages. Pensez donc à tout remettre 
 aux valeurs par défaut, généralement sur « automatique » quand 
 vous ne menez pas de test spécifique. 
@@ -1412,7 +1412,7 @@ pas stocker en cache des composants de plus de 25 Ko, pour un total
 de 500 Ko. 
 
 **Recommandation** : pour compatibilité avec les anciens iPhone, 
-gardez au maximum des composants (CSS, javascript) de moins 
+gardez au maximum des composants (CSS, JavaScript) de moins 
 de 25 Ko une fois décompressés et limitez-vous à une vingtaine 
 d'objets. 
 
@@ -1517,7 +1517,7 @@ les détails les plus à jour : <http://en.wikipedia.org/wiki/Bypass_your_cache>
 
 * Ajouter une expiration explicite à tous les contenus statiques ; 
 
-* Externalisez les CSS et javascript dans des fichiers séparés 
+* Externalisez les CSS et JavaScript dans des fichiers séparés 
   du HTML ; 
 
 * Préchargez le cache quand c'est pertinent ; 
