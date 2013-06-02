@@ -236,7 +236,7 @@ Les cas Google, Microsoft, AOL et Yahoo!
 Plus haut, je vous ai cité le cas d’Amazon, qui voit ses ventes chuter de
 1 % pour chaque tranche de 100 ms de latence. Il y a en fait d'autres
 poids lourds qui ont donné des chiffres sur ce sujet : Google,
-Microsoft, AOL et Yahoo! Ce dernier a même créé une équipe dédiée au
+Microsoft, AOL et Yahoo!. Ce dernier a même créé une équipe dédiée au
 sujet (nommée « exceptional performance ») et a communiqué le résultat
 de ses recherches auprès de la communauté des développeurs web. Tous les
 quatre ont un ressenti similaire, même si les chiffres et leur
@@ -275,7 +275,7 @@ la première semaine, puis encore 25 % par la suite[^8]. 
 
 Le retour d’expérience suivant vient de Yahoo! Sur leurs tests
 comparatifs, un délai de 400 ms induit immédiatement 5 à 9 % d’abandon[^9],
-c’est à dire de gens qui ne vont pas plus loin et qui ne cliquent sur
+c’est-à-dire de gens qui ne vont pas plus loin et qui ne cliquent sur
 aucun lien, ni aucune publicité.
 
 > + 400 ms au chargement → - 5 à 9 % d’abandon
@@ -316,9 +316,9 @@ visiteurs à affiner et approfondir leur recherche.
 ![Évolution des performances suivant le ralentissement sur Bing](img/chap01-evolution-des-performances-suivant-le-ralentissement-sur-bing.png)
 
 La baisse de revenus publicitaires est d'ailleurs corrélée par une étude
-de Jackob Nielsen en juin 2010 : après un grand délai d'attente,
+de Jakob Nielsen en juin 2010 : après un grand délai d'attente,
 l'utilisateur se concentre sur le contenu et est bien moins à même de
-s'arrêter sur les contenus promotionnels. Jackob évoque le passage de
+s'arrêter sur les contenus promotionnels. Jakob évoque le passage de
 20 % d'attention au promotionnel pour 1 seconde d'attente à 1 %
 d'attention au promotionnel seulement après 8 secondes d'attente.
 
@@ -338,7 +338,7 @@ Malgré l’augmentation des débits, le web est lent
 Le web est malheureusement en mauvais état par rapport aux performances.
 Je vous ai cité en début de chapitre les cas de TF1 et de France Telecom
 avec respectivement un peu plus de 5 secondes et un peu moins de 10 
-secondes en moyenne. On se situe presque toujours au delà des 2
+secondes en moyenne. On se situe presque toujours au-delà des 2
 secondes, quel que soit le site, et trop souvent au-delà de 3, voire
 de 5 secondes. 
 
@@ -357,7 +357,7 @@ plus importante. 
 Au total, en moyenne, le poids des pages est de plus de 500 kilo octets,
 avec près de 65 composants par page et pour seulement 500 mots. Si
 l'étude ne va pas jusqu'en 2010, avec la multiplication des
-bibliothèques javascript et des effets visuels, on peut sans risques
+bibliothèques JavaScript et des effets visuels, on peut sans risque
 continuer les courbes sur leur progression d'alors.
 
   [^12]: Étude avec sources sur websiteoptimizations.com, [« Average Web Page Size Triples Since 2003 » d’avril 2008](http://www.websiteoptimization.com/speed/tweak/average-web-page/)
@@ -389,7 +389,7 @@ du navigateur et du réseau que nos problèmes se logent.
 
 Steve Souders a mené des études pour mesurer le poids de la génération
 de la page HTML dans le temps de chargement total. D'après ses résultats
-seul 10 à 20 % du temps est du à la génération de la page par le serveur
+seul 10 à 20 % du temps est dû à la génération de la page par le serveur
 applicatif, 80 % du temps est passé sur le navigateur ou sur le réseau.
 Pour les gros sites français le rapport est même plus souvent de 95 / 5
 que de 80 / 20.
@@ -430,7 +430,7 @@ Une stratégie gagnante, d'autres chiffres
 --------------------------------------------------
 
 Plus que ces chiffres, c’est aussi l’assurance que la démarche a été un
-succès de nombreux sites, dont Yahoo! qui en a fait un cheval de
+succès pour de nombreux sites, dont Yahoo! qui en a fait un cheval de
 bataille. Travailler sur les performances web vues du navigateur a
 permis de réduire le temps de chargement des pages, et ainsi éviter de
 perdre des clients et des visiteurs.
@@ -556,7 +556,7 @@ surveillance, on peut les mettre en pratique en une semaine.
 Plus qu'une fonctionnalité
 --------------------------------
 
-C'est peut être Fred Wilson qui résume le mieux tout cela. Fred Wilson est
+C'est peut-être Fred Wilson qui résume le mieux tout cela. Fred Wilson est
 un investisseur bien connu aux États Unis d'Amérique de par ses
 participations dans de nombreuses sociétés « web 2.0 » comme Twitter,
 Del.icio.us ou Feedburner. Lors des conférences « Future of Web Apps »
