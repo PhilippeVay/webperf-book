@@ -1,6 +1,6 @@
 * Le livre : https://github.com/edas/webperf-book/
 * Les tickets en cours : https://github.com/edas/webperf-book/issues 
-* Quelques liens à pour fouiller : https://groups.diigo.com/group/web-performance 
+* Quelques liens pour fouiller : https://groups.diigo.com/group/web-performance 
 * La liste de diffusion webperf française : https://groups.google.com/group/performance-web?hl=fr
 
 Participer
@@ -19,7 +19,7 @@ Faire une proposition, remonter une anomalie, …
 
 Rendez-vous dans la rubrique « issues ». Vérifiez que ce que vous souhaitez remonter ne l’est pas déjà, et cliquez sur le bouton vers « new issue ». 
 
-En marge de la description de votre ticket, pensez à cliquer sur tous les labels à gauches qui vous semblent s’appliquer à votre cas. Vous en aurez probablement au moins un jaune et un d’une autre couleur.
+En marge de la description de votre ticket, pensez à cliquer sur tous les labels à gauche qui vous semblent s’appliquer à votre cas. Vous en aurez probablement au moins un jaune et un d’une autre couleur.
 
 Réaliser une modification
 -------------------------
@@ -48,7 +48,7 @@ Contenu : La forme
 Format
 ------
 
-Les fichiers sont des fichiers texte, codage UTF-8, avec la syntaxe Markdown et les extensions Pandoc. Github offre un apperçu avec sa propre extension de Markdown, qui ne comprend pas toutes les subtilités de Pandoc. Entre autres : les listes recommencent toujours à partir de 1, les tableaux ne sont pas compris et les images peuvent ne pas s’afficher et générer un lien cassé.
+Les fichiers sont des fichiers texte, codage UTF-8, avec la syntaxe Markdown et les extensions Pandoc. Github offre un aperçu avec sa propre extension de Markdown, qui ne comprend pas toutes les subtilités de Pandoc. Entre autres : les listes recommencent toujours à partir de 1, les tableaux ne sont pas compris et les images peuvent ne pas s’afficher et générer un lien cassé.
 
 - Détails : http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown 
 
